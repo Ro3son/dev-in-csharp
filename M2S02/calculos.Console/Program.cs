@@ -4,25 +4,58 @@ Entrada: O nome, ano de nascimento, salário do funcionário e a % de reajuste.
 Saída: Mostrar o nome do funcionário, idade e o valor do salário já reajustado.
 */
 
-System.Console.WriteLine("Digite o nome do Funcionário: ");
-var nomeFuncionario = Console.ReadLine();
+// System.Console.WriteLine("Digite o nome do Funcionário: ");
+// var nomeFuncionario = Console.ReadLine();
 
-System.Console.WriteLine("Digite o ano de Nascimento: ");
+// System.Console.WriteLine("Digite o ano de Nascimento: ");
 
-int anoAtual = 2022;
-int anoNascimento = System.Convert.ToInt32(Console.ReadLine());
+// int anoAtual = 2022;
+// int anoNascimento = System.Convert.ToInt32(Console.ReadLine());
 
-int idadeFuncionario = (anoAtual - anoNascimento);
+// int idadeFuncionario = (anoAtual - anoNascimento);
 
-System.Console.WriteLine("Digite o salário: ");
-var salarioFuncionario = System.Convert.ToDecimal(Console.ReadLine());
+// System.Console.WriteLine("Digite o salário: ");
+// var salarioFuncionario = System.Convert.ToDecimal(Console.ReadLine());
 
-System.Console.WriteLine("Digite a porcentagem: ");
-var porcentagem = System.Convert.ToDecimal(Console.ReadLine());
+// System.Console.WriteLine("Digite a porcentagem: ");
+// var porcentagem = System.Convert.ToDecimal(Console.ReadLine());
 
-decimal valorSalarioReajustado = (((porcentagem / 100) * salarioFuncionario) + salarioFuncionario);
+// decimal valorSalarioReajustado = (((porcentagem / 100) * salarioFuncionario) + salarioFuncionario);
 
-string salarioReajustado = valorSalarioReajustado.ToString("N2");
+// string salarioReajustado = valorSalarioReajustado.ToString("N2");
 
-System.Console.WriteLine(
-    $"Nome: {nomeFuncionario} Idade: {idadeFuncionario} Salário Reajustado: {salarioReajustado}");
+// System.Console.WriteLine(
+//     $"Nome: {nomeFuncionario} Idade: {idadeFuncionario} Salário Reajustado: {salarioReajustado}");
+
+/*
+Calcular Média de Alunos
+Entrada: notas de seis alunos.
+Saída: Mostrar a média da nota da prova e o total de quantos tiveram
+notas maior que 7; nota menor que 7, maior que 0 e notas igual a 0.
+*/
+
+double notaAlunoA = 7.5;
+double notaAlunoB = 6.5;
+double notaAlunoC = 8.5;
+double notaAlunoD = 6.8;
+double notaAlunoE = 5.3;
+double notaAlunoF = 9.2;
+
+double media = Math.Round((notaAlunoA + notaAlunoB + notaAlunoC + notaAlunoD + notaAlunoE + notaAlunoF) / 6);
+
+// var media = Math.Round(((notaAlunoA + notaAlunoB + notaAlunoC + notaAlunoD + notaAlunoE + notaAlunoF)/ 6));
+
+int qtdAlunosNotaMaiorQueSete = 3;
+int qtdAlunosNotaMenorQueSete =  3;
+int qtdAlunosNotasMaiorQueZero = 6;
+int qtdAlunosNotaIgualAZero = 0;
+
+System.Console.WriteLine("A média das notas é: " + media);
+
+System.Console.WriteLine("Quantos alunos tiveram nota maior que sete? " + qtdAlunosNotaMaiorQueSete);
+
+System.Console.WriteLine("Quantos alunos tiveram nota menor que sete? " + qtdAlunosNotaMenorQueSete);
+
+System.Console.WriteLine("Quantos alunos tiveram nota maior que zero? " + qtdAlunosNotasMaiorQueZero);
+
+System.Console.WriteLine("Quantos alunos tiveram nota igual a zero? " + qtdAlunosNotaIgualAZero);
