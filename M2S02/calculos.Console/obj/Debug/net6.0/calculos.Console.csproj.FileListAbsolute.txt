@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\bin\Debug\net6.0\calculos.Console.exe
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\bin\Debug\net6.0\calculos.Console.deps.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\bin\Debug\net6.0\calculos.Console.runtimeconfig.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\bin\Debug\net6.0\calculos.Console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\bin\Debug\net6.0\calculos.Console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\calculos.Console.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\calculos.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\calculos.Console.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\calculos.Console.AssemblyInfo.cs
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\calculos.Console.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\calculos.Console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\refint\calculos.Console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\calculos.Console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\calculos.Console.genruntimeconfig.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\m2s02\calculos.Console\obj\Debug\net6.0\ref\calculos.Console.dll
