@@ -34,18 +34,31 @@ Saída: Mostrar a média da nota da prova e o total de quantos tiveram
 notas maior que 7; nota menor que 7, maior que 0 e notas igual a 0.
 */
 
-double[] notas = new double[6]{ 7.5, 6.5, 8.5, 6.8, 5.3, 9.2 };
+double[] notas = new double[6] { 7.5, 6.5, 8.5, 6.8, 5.3, 9.2 };
 
 var media = Math.Round(notas.Average());
 
 System.Console.WriteLine($"A média das notas é: {media}");
 
-// int qtdAlunosNotaMaiorQueSete = 3;
+var qtdAlunosNotaMaiorQueSete = 0;
+
+// for (int i = 0; i < notas.Length; i++) {
+//     if (notas[i] > 7.0) {
+//         System.Console.WriteLine(notas[i]);
+//     }
+// }
+
+foreach (double n in notas) {
+    if (n > 7.0) System.Console.WriteLine(n);
+}
+
+
+
 // int qtdAlunosNotaMenorQueSete =  3;
 // int qtdAlunosNotasMaiorQueZero = 6;
 // int qtdAlunosNotaIgualAZero = 0;
 
-// System.Console.WriteLine("Quantos alunos tiveram nota maior que sete? " + qtdAlunosNotaMaiorQueSete);
+System.Console.WriteLine("Quantos alunos tiveram nota maior que sete? " + qtdAlunosNotaMaiorQueSete);
 
 // System.Console.WriteLine("Quantos alunos tiveram nota menor que sete? " + qtdAlunosNotaMenorQueSete);
 
