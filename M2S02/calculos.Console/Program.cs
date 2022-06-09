@@ -34,28 +34,21 @@ Saída: Mostrar a média da nota da prova e o total de quantos tiveram
 notas maior que 7; nota menor que 7, maior que 0 e notas igual a 0.
 */
 
-double notaAlunoA = 7.5;
-double notaAlunoB = 6.5;
-double notaAlunoC = 8.5;
-double notaAlunoD = 6.8;
-double notaAlunoE = 5.3;
-double notaAlunoF = 9.2;
+double[] notas = new double[6]{ 7.5, 6.5, 8.5, 6.8, 5.3, 9.2 };
 
-double media = Math.Round((notaAlunoA + notaAlunoB + notaAlunoC + notaAlunoD + notaAlunoE + notaAlunoF) / 6);
+var media = Math.Round(notas.Average());
 
-// var media = Math.Round(((notaAlunoA + notaAlunoB + notaAlunoC + notaAlunoD + notaAlunoE + notaAlunoF)/ 6));
+System.Console.WriteLine($"A média das notas é: {media}");
 
-int qtdAlunosNotaMaiorQueSete = 3;
-int qtdAlunosNotaMenorQueSete =  3;
-int qtdAlunosNotasMaiorQueZero = 6;
-int qtdAlunosNotaIgualAZero = 0;
+// int qtdAlunosNotaMaiorQueSete = 3;
+// int qtdAlunosNotaMenorQueSete =  3;
+// int qtdAlunosNotasMaiorQueZero = 6;
+// int qtdAlunosNotaIgualAZero = 0;
 
-System.Console.WriteLine("A média das notas é: " + media);
+// System.Console.WriteLine("Quantos alunos tiveram nota maior que sete? " + qtdAlunosNotaMaiorQueSete);
 
-System.Console.WriteLine("Quantos alunos tiveram nota maior que sete? " + qtdAlunosNotaMaiorQueSete);
+// System.Console.WriteLine("Quantos alunos tiveram nota menor que sete? " + qtdAlunosNotaMenorQueSete);
 
-System.Console.WriteLine("Quantos alunos tiveram nota menor que sete? " + qtdAlunosNotaMenorQueSete);
+// System.Console.WriteLine("Quantos alunos tiveram nota maior que zero? " + qtdAlunosNotasMaiorQueZero);
 
-System.Console.WriteLine("Quantos alunos tiveram nota maior que zero? " + qtdAlunosNotasMaiorQueZero);
-
-System.Console.WriteLine("Quantos alunos tiveram nota igual a zero? " + qtdAlunosNotaIgualAZero);
+// System.Console.WriteLine("Quantos alunos tiveram nota igual a zero? " + qtdAlunosNotaIgualAZero);
