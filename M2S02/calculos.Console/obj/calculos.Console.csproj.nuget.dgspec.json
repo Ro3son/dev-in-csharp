@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculos.Console\\calculos.Console.csproj": {}
+    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\m2s02\\calculos.console\\calculos.Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculos.Console\\calculos.Console.csproj": {
+    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\m2s02\\calculos.console\\calculos.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculos.Console\\calculos.Console.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\m2s02\\calculos.console\\calculos.Console.csproj",
         "projectName": "calculos.Console",
-        "projectPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculos.Console\\calculos.Console.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\m2s02\\calculos.console\\calculos.Console.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculos.Console\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\m2s02\\calculos.console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
