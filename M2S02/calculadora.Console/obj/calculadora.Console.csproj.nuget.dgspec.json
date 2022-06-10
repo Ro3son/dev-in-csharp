@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.Console\\calculadora.Console.csproj": {}
+    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.console\\calculadora.Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.Console\\calculadora.Console.csproj": {
+    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.console\\calculadora.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.Console\\calculadora.Console.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.console\\calculadora.Console.csproj",
         "projectName": "calculadora.Console",
-        "projectPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.Console\\calculadora.Console.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.console\\calculadora.Console.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.Console\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y0cLFfFloKgywWqggFPpTbbXahp8ExrMnbcTmmMs82t3uA3Br1OcPbzD7txY8peBVv3Cxhb8vgqMI+55+Erq+g==",
+  "dgSpecHash": "lBN33HH6UwNy2xJcDR49JTB6YTIhjCeInhlQDk5Fxz8ebySPtDJ2no1/ejYL3bPc6zkIRcgB/bUFxvt8KgbREA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.Console\\calculadora.Console.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\calculadora.console\\calculadora.Console.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
