@@ -27,11 +27,17 @@ class Calculator {
         System.Console.WriteLine("* Multiplicação");
         System.Console.WriteLine("/ Divisão\n");
 
-        MenuOperators();
+        ExecuteProgramWhile();
         
     }
     static void ExecuteProgramWhile() {
-        
+    
+        var option = "";
+
+        while (option != "S") {
+            MenuOperators();
+            option = Console.ReadLine();
+        }
     }
     static void MenuOperators() {
 
@@ -44,6 +50,7 @@ class Calculator {
 
         switch (options) {
             case '+':
+                System.Console.WriteLine("Adição");
                 Somar();
                 break;
             case '-':
