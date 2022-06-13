@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\bin\Debug\net6.0\operacao-bancaria.Console.exe
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\bin\Debug\net6.0\operacao-bancaria.Console.deps.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\bin\Debug\net6.0\operacao-bancaria.Console.runtimeconfig.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\bin\Debug\net6.0\operacao-bancaria.Console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\bin\Debug\net6.0\operacao-bancaria.Console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\operacao-bancaria.Console.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\operacao-bancaria.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\operacao-bancaria.Console.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\operacao-bancaria.Console.AssemblyInfo.cs
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\operacao-bancaria.Console.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\operacao-bancaria.Console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\refint\operacao-bancaria.Console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\operacao-bancaria.Console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\operacao-bancaria.Console.genruntimeconfig.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S02\operacao-bancaria.Console\obj\Debug\net6.0\ref\operacao-bancaria.Console.dll
