@@ -5,7 +5,6 @@ Crie Menu (Adicionar uma cor para o texto do menu, valor inicial de saldo é 0)
 Crie método de consulta de saldo e implemente a lógica necessária e o resultado esperado.
 
 */
-
 class CalculadoraBancaria {
     public enum Menu { sair, saldo, deposito, saque, historico }
     static void Main() {
@@ -18,9 +17,9 @@ class CalculadoraBancaria {
         System.Console.WriteLine("0 - Sair \n");
         System.Console.WriteLine("Digite uma opção: \n");
 
-        executarPrograma();
+        ExecutarPrograma();
     }
-    static void executarPrograma() {
+    static void ExecutarPrograma() {
        
        var condition = true;
 
@@ -34,7 +33,7 @@ class CalculadoraBancaria {
          
        }
     }
-    static bool switchOptions(Menu options) {
+    static bool MenuOpcoes(Menu options) {
 
         var condition = true;
 
@@ -42,11 +41,11 @@ class CalculadoraBancaria {
             case Menu.saldo:
                 Console.ForegroundColor = ConsoleColor.White;
                 System.Console.WriteLine("\n\n------ Saldo Atual ------ \n");
-                consultarSaldo();
+                ConsultarSaldo();
                 break;
             case Menu.deposito:
                 System.Console.WriteLine("\n\n------ Depositar ------ \n");
-                depositar();
+                Depositar();
                 break;
             case Menu.saque:
                 System.Console.WriteLine("Sacar: ");
@@ -62,11 +61,11 @@ class CalculadoraBancaria {
         }
         return condition;
     }
-    static void consultarSaldo() {
+    static void ConsultarSaldo() {
         var saldo = 0;
         System.Console.WriteLine($"Saldo: {saldo}");
     }
-    static void depositar() {
+    static void Depositar() {
         System.Console.WriteLine("Digite o Valor para Depósito: ");
         decimal deposita = System.Convert.ToDecimal(Console.ReadLine());
         System.Console.WriteLine($"Você depositou: {deposita}");
