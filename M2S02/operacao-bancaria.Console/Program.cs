@@ -41,10 +41,12 @@ class CalculadoraBancaria {
         switch(options) {
             case Menu.saldo:
                 Console.ForegroundColor = ConsoleColor.White;
-                System.Console.WriteLine("Saldo: ");
+                System.Console.WriteLine("\n\n------ Saldo Atual ------ \n");
+                consultarSaldo();
                 break;
             case Menu.deposito:
-                System.Console.WriteLine("Depositar: ");
+                System.Console.WriteLine("\n\n------ Depositar ------ \n");
+                depositar();
                 break;
             case Menu.saque:
                 System.Console.WriteLine("Sacar: ");
@@ -60,4 +62,14 @@ class CalculadoraBancaria {
         }
         return condition;
     }
+    static void consultarSaldo() {
+        var saldo = 0;
+        System.Console.WriteLine($"Saldo: {saldo}");
+    }
+    static void depositar() {
+        System.Console.WriteLine("Digite o Valor para Depósito: ");
+        decimal deposita = System.Convert.ToDecimal(Console.ReadLine());
+        System.Console.WriteLine($"Você depositou: {deposita}");
+    }
 }
+    
