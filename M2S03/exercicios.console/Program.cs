@@ -108,3 +108,4 @@ public class Calcular {
 }
 
 // Ex 10 - Dê um exemplo de abstração no mundo real.
+// Resposta: Uma bicicleta e todas as sua partes como: quadro, suspensão, garfo, mesa, guidão etc.
