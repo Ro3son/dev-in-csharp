@@ -93,3 +93,18 @@ public class Pessoa {
 
 // Ex 8 - Quando o construtor de uma classe é chamado?
 //Resposta: A qualquer hora que uma instância de uma classe é criada.
+
+// Ex 9 - Crie uma classe para calcular a soma de até 4 números inteiros 
+// usando o conceito de parâmetros opcionais.
+
+public class Calcular {
+    static int Soma(int a = 2, int b = 2, int c = 3, int d = 4) {
+        return a + b + c + d;
+    }
+    static void Main() {
+        int num = Soma();
+        System.Console.WriteLine(num);
+    }
+}
+
+// Ex 10 - Dê um exemplo de abstração no mundo real.
