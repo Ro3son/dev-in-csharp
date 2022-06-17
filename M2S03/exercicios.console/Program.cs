@@ -98,11 +98,11 @@ public class Pessoa {
 // usando o conceito de parâmetros opcionais.
 
 public class Calcular {
-    static int Soma(int a = 2, int b = 2, int c = 3, int d = 4) {
+    static int Soma(int a, int b = 2, int c = 3, int d = 4) {
         return a + b + c + d;
     }
     static void Main() {
-        int num = Soma();
+        int num = Soma(2);
         System.Console.WriteLine(num);
     }
 }
