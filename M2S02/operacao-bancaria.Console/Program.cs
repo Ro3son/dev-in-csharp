@@ -6,11 +6,9 @@ Crie Menu (Adicionar uma cor para o texto do menu, valor inicial de saldo é 0)
 Crie método de consulta de saldo e implemente a lógica necessária e o resultado esperado.
 
 */
-class CalculadoraBancaria
-{
+class CalculadoraBancaria {
     public enum Menu { sair, saldo, deposito, saque, historico }
-    static void Main()
-    {
+    static void Main() {
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         System.Console.WriteLine("\n\n ---------- Menu ----------\n");
         System.Console.WriteLine("1 - Consultar Saldo");
@@ -22,13 +20,11 @@ class CalculadoraBancaria
 
         ExecutarPrograma();
     }
-    static void ExecutarPrograma()
-    {
+    static void ExecutarPrograma() {
 
         var condition = true;
 
-        while (condition)
-        {
+        while (condition) {
 
             int option = System.Convert.ToInt32(Console.ReadLine());
 
@@ -38,8 +34,7 @@ class CalculadoraBancaria
 
         }
     }
-    static bool MenuOpcoes(Menu options)
-    {
+    static bool MenuOpcoes(Menu options) {
 
         var condition = true;
 
@@ -48,17 +43,19 @@ class CalculadoraBancaria
             case Menu.saldo:
                 Console.ForegroundColor = ConsoleColor.White;
                 System.Console.WriteLine("\n\n------ Saldo Atual ------ \n");
-                ConsultarSaldo();
+                CalculadoraBancaria.ConsultarSaldo();
                 break;
             case Menu.deposito:
                 System.Console.WriteLine("\n\n------ Depositar ------ \n");
-                Depositar();
+                CalculadoraBancaria.Depositar();
                 break;
             case Menu.saque:
-                System.Console.WriteLine("Sacar: ");
+                System.Console.WriteLine("\n\n ------ Sacar ------ \n");
+                Sacar();
                 break;
             case Menu.historico:
-                System.Console.WriteLine("Histórico: ");
+                System.Console.WriteLine("\n\n ------- Histórico ------\n");
+                Historico();
                 break;
             case Menu.sair:
             default:
@@ -66,27 +63,44 @@ class CalculadoraBancaria
                 System.Console.WriteLine("Saindo...");
                 break;
         }
+        
         return condition;
     }
-    static void Test(out decimal deposito) {
 
-        deposito = Convert.ToDecimal(Console.ReadLine());
+    static void ConsultarSaldo() {
+        
+        decimal saldo = 0;
+
+        System.Console.WriteLine($"Saldo: {saldo}");
     }
     static void Depositar() {
 
-        System.Console.WriteLine("Digite o Valor para Depósito: ");
+        System.Console.WriteLine("Digite um valor para depositar: ");
 
-        decimal depositarValor;
+        decimal deposito = Convert.ToDecimal(Console.ReadLine());
 
-        Test(out depositarValor);
+        System.Console.WriteLine($"Você depositou: {deposito}");
 
-        System.Console.WriteLine($"Você depositou: {depositarValor}");
     }
-     static void ConsultarSaldo() {
+    static void Sacar() {
 
-        decimal saldo = 120.25m;
+        System.Console.WriteLine("Digite o valor para sacar: ");
+        
+        decimal saque = Convert.ToDecimal(Console.ReadLine());
 
-        System.Console.WriteLine($"Saldo: {saldo}");
+        System.Console.WriteLine($"Você sacou: {saque}");
+    }
+    static void Historico() {
+
+        decimal deposito = 300.20m;
+
+        decimal saque = 50.00m;
+
+        decimal saldo = 100.00m;
+
+        decimal total = (saque - saldo);
+
+        System.Console.WriteLine($"Depósito: {deposito}\n Saque: {saque}\n Saldo: {total}");
     }
 
 }
