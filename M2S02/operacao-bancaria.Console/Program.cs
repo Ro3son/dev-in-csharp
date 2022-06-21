@@ -18,84 +18,74 @@ namespace BankingApplication {
             System.Console.WriteLine("1 - Consultar Saldo");
             System.Console.WriteLine("2 - Depositar");
             System.Console.WriteLine("3 - Sacar");
-            System.Console.WriteLine("4 - Histórico");
+            System.Console.WriteLine("4 - Extrato");
             System.Console.WriteLine("0 - Sair \n");
             System.Console.WriteLine("Digite uma opção: \n");
 
-            ExecutarPrograma();
-
-        }
-        static void ExecutarPrograma() {
-
             var condition = true;
 
+            decimal x;
+            
+            decimal y;
+ 
             while (condition) {
 
-                int option = System.Convert.ToInt32(Console.ReadLine());
+                int option = Convert.ToInt32(Console.ReadLine());
 
                 Menu options = (Menu)option;
 
-                condition = MenuOpcoes(options);
-
-            }
-        }
-        static bool MenuOpcoes(Menu options) {
-
-            var condition = true;
-
-            switch (options) {
-                case Menu.saldo:
-                    decimal saldoValue;
-                    Console.ForegroundColor = ConsoleColor.White;
-                    BankAccount saldo = new BankAccount();
-                    saldo.ConsultarSaldo(out saldoValue);
-                    System.Console.WriteLine("\n\n ------ Saldo ------ \n");
-                    System.Console.WriteLine($"Saldo: {saldoValue}");
-                    break;
-                case Menu.deposito:
-                    decimal x;
-                    BankAccount deposito = new BankAccount();
-                    System.Console.WriteLine("\n\n ------ Depósito ------ \n");
-                    deposito.Depositar(out x);
-                    System.Console.WriteLine($"Você depositou: {x}");
-                    break;
-                case Menu.saque:
-                    decimal y;
-                    BankAccount saque = new BankAccount();
-                    System.Console.WriteLine("\n\n ------ Saque ------ \n");
-                    saque.Sacar(out y);
-                    System.Console.WriteLine($"Você sacou: {y}");
-                    break;
-                case Menu.historico:
-                    BankAccount historico = new BankAccount();
-                    System.Console.WriteLine("\n\n ------ Extrato ------ \n");
-                    System.Console.WriteLine($"{historico.Historico()}");
-                    break;
-                case Menu.sair:
-                default:
-                    condition = false;
-                    System.Console.WriteLine("Saindo...");
-                    break;
-            }
+                switch (options) {
+                    case Menu.saldo:
+                        decimal saldoValue;
+                        Console.ForegroundColor = ConsoleColor.White;
+                        System.Console.WriteLine("\n\n ------ Saldo ------ \n");
+                        BankAccount saldo = new BankAccount();
+                        saldo.ConsultarSaldo(out saldoValue);
+                        System.Console.WriteLine($"Saldo: {saldoValue}\n");
+                        break;
+                    case Menu.deposito:
+                        System.Console.WriteLine("\n\n ------ Depósito ------ \n");
+                        System.Console.WriteLine("Digite o valor para depósito: ");
+                        BankAccount deposito = new BankAccount();
+                        deposito.Depositar(out x);
+                        System.Console.WriteLine($"Saldo Atual: {x}\n");
+                        break;
+                    case Menu.saque:
+                        System.Console.WriteLine("\n\n ------ Saque ------ \n");
+                        System.Console.WriteLine("Digite o valor para sacar: ");
+                        BankAccount saque = new BankAccount();
+                        saque.Sacar(out y);
+                        System.Console.WriteLine($"Você sacou: {y}\n");
+                        break;
+                    case Menu.historico:
+                        BankAccount historico = new BankAccount();
+                        System.Console.WriteLine("\n\n ------ Extrato ------ \n");
+                        historico.Historico();
+                        System.Console.WriteLine($"Depósito: {0}, Saque: {0}, Saldo: {0}");
+                        break;
+                    case Menu.sair:
+                    default:
+                        condition = false;
+                        System.Console.WriteLine("Saindo...");
+                        break;
+                }
             
-            return condition;
+            }
+
         }
 
     }
     public class BankAccount {
-        private decimal saldo, deposito, saque;
-        private string extrato = "";
         public void ConsultarSaldo(out decimal saldo) {
             
-            saldo = 0;
+            saldo = 100.00m;
+
         }
         public void Depositar(out decimal x) {
 
             decimal value2;
 
             ConsultarSaldo(out value2);
-
-            System.Console.WriteLine("Digite o valor para depósito: ");
 
             decimal value1 = Convert.ToDecimal(Console.ReadLine());
 
@@ -113,8 +103,6 @@ namespace BankingApplication {
         }
         public void Sacar(out decimal y) {
 
-            System.Console.WriteLine("Digite o valor para sacar: ");
-            
             y = Convert.ToDecimal(Console.ReadLine());
 
             // Validação
@@ -126,14 +114,11 @@ namespace BankingApplication {
                 System.Console.WriteLine("Saldo Insuficiente!");
             }
         }
-        public string Historico() {
+        public void Historico() {
 
-            System.Console.WriteLine(
-            $"Depósito: {deposito}\n" +
-            $"Saque: {saque}\n" +
-            $"Saldo: {saldo}" );
-
-            return extrato;
+            var date = DateTime.Now;
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            System.Console.WriteLine($"{date}");
 
         }
     }
