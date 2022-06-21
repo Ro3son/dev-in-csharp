@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.console\\operacao-bancaria.Console.csproj": {}
+    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.Console\\operacao-bancaria.Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.console\\operacao-bancaria.Console.csproj": {
+    "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.Console\\operacao-bancaria.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.console\\operacao-bancaria.Console.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.Console\\operacao-bancaria.Console.csproj",
         "projectName": "operacao-bancaria.Console",
-        "projectPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.console\\operacao-bancaria.Console.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.Console\\operacao-bancaria.Console.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.console\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\BACK-END\\dev-in-csharp\\M2S02\\operacao-bancaria.Console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
