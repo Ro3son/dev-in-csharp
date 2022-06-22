@@ -5,13 +5,17 @@ Crie Menu (Adicionar uma cor para o texto do menu, valor inicial de saldo é 0)
 
 Crie método de consulta de saldo e implemente a lógica necessária e o resultado esperado.
 
+Crie método para depósito.
+Validação: não pode enviar números negativos (mostrar em cor vermelha a mensagem da validação)
+
 */
 
 using System;
 
 namespace BankingApplication {
-    public class MenuBank {
-        public enum Menu { sair, saldo, deposito, saque, historico }
+    public static class MenuBank {
+        static decimal saldo, deposito, saque, saldoAposDeposito, saldoAposSaque;
+        public enum Menu { sair, saldo, deposito, saque, extrato }
         static void Main() {
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             System.Console.WriteLine("\n\n ---------- Menu ----------\n");
@@ -21,47 +25,72 @@ namespace BankingApplication {
             System.Console.WriteLine("4 - Extrato");
             System.Console.WriteLine("0 - Sair \n");
             System.Console.WriteLine("Digite uma opção: \n");
+            Console.ResetColor();
+
+            ExecutarPrograma();
+
+        }
+        public static void ExecutarPrograma() {
 
             var condition = true;
 
-            decimal x;
-            
-            decimal y;
- 
             while (condition) {
 
                 int option = Convert.ToInt32(Console.ReadLine());
 
                 Menu options = (Menu)option;
 
+                Console.ForegroundColor = ConsoleColor.White;
+
                 switch (options) {
                     case Menu.saldo:
-                        decimal saldoValue;
-                        Console.ForegroundColor = ConsoleColor.White;
                         System.Console.WriteLine("\n\n ------ Saldo ------ \n");
-                        BankAccount saldo = new BankAccount();
-                        saldo.ConsultarSaldo(out saldoValue);
-                        System.Console.WriteLine($"Saldo: {saldoValue}\n");
+                        System.Console.WriteLine("Digite um valor para o saldo: ");
+                        saldo = Convert.ToDecimal(Console.ReadLine());
+                        System.Console.WriteLine($"Saldo: {BankAccount.ConsultarSaldo(saldo)}\n");
                         break;
                     case Menu.deposito:
                         System.Console.WriteLine("\n\n ------ Depósito ------ \n");
-                        System.Console.WriteLine("Digite o valor para depósito: ");
-                        BankAccount deposito = new BankAccount();
-                        deposito.Depositar(out x);
-                        System.Console.WriteLine($"Saldo Atual: {x}\n");
+                        System.Console.WriteLine("Digite um valor para depósito: ");
+                        deposito = Convert.ToDecimal(Console.ReadLine());
+                        saldoAposDeposito = (BankAccount.ConsultarSaldo(saldo) + BankAccount.Depositar(deposito));
+
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.ForegroundColor = ConsoleColor.White;
+
+                        var validation = (deposito < 0) ?
+                        "Não pode enviar números negativos" :
+                        $"Você depositou {deposito}\n" + $"Saldo Atual: {saldoAposDeposito}";
+
+                        System.Console.WriteLine($"{validation}");
+
+                        Console.ResetColor();
+                        Console.Write("\n");
+
                         break;
                     case Menu.saque:
                         System.Console.WriteLine("\n\n ------ Saque ------ \n");
-                        System.Console.WriteLine("Digite o valor para sacar: ");
-                        BankAccount saque = new BankAccount();
-                        saque.Sacar(out y);
-                        System.Console.WriteLine($"Você sacou: {y}\n");
+                        System.Console.WriteLine("Digite um valor para saque: ");
+                        saque = Convert.ToDecimal(Console.ReadLine());
+                        saldoAposSaque = (BankAccount.Depositar(saldoAposDeposito) - BankAccount.Sacar(saque));
+
+                        Console.BackgroundColor = ConsoleColor.Green;
+                        Console.ForegroundColor = ConsoleColor.White;
+
+                        string validation2 = (saque == 0) ?
+                        "Saldo Insuficiente!" : $"Você sacou: {saque}\n" + $"Saldo Atual: {saldoAposSaque}";
+
+                        System.Console.WriteLine($"{validation2}");
+
+                        Console.ResetColor();
+                        Console.WriteLine("\n");
+
                         break;
-                    case Menu.historico:
-                        BankAccount historico = new BankAccount();
+                    case Menu.extrato:
                         System.Console.WriteLine("\n\n ------ Extrato ------ \n");
-                        historico.Historico();
-                        System.Console.WriteLine($"Depósito: {0}, Saque: {0}, Saldo: {0}");
+                        var date = DateTime.Now;
+                        System.Console.WriteLine($"{date}");
+                        System.Console.WriteLine($"Depósito: {deposito}, Saque: {saque}, Saldo: {saldoAposSaque}");
                         break;
                     case Menu.sair:
                     default:
@@ -69,57 +98,23 @@ namespace BankingApplication {
                         System.Console.WriteLine("Saindo...");
                         break;
                 }
-            
+                Console.ResetColor();
             }
-
         }
 
     }
-    public class BankAccount {
-        public void ConsultarSaldo(out decimal saldo) {
-            
-            saldo = 100.00m;
-
+    public static class BankAccount {
+        public static decimal ConsultarSaldo(this decimal saldo) {
+            return saldo;
         }
-        public void Depositar(out decimal x) {
-
-            decimal value2;
-
-            ConsultarSaldo(out value2);
-
-            decimal value1 = Convert.ToDecimal(Console.ReadLine());
-
-            x = value1 + value2;
-
-            // Validação
-
-            if (value1 < 0) {
-
-                Console.ForegroundColor = ConsoleColor.Red;
-
-                System.Console.WriteLine("Não pode enviar números negativos \n");
-            }
-
+        public static decimal Depositar(this decimal deposito) {
+            return deposito;
         }
-        public void Sacar(out decimal y) {
-
-            y = Convert.ToDecimal(Console.ReadLine());
-
-            // Validação
-
-            if (y < 1) {
-
-                Console.ForegroundColor = ConsoleColor.Red;
-
-                System.Console.WriteLine("Saldo Insuficiente!");
-            }
+        public static decimal Sacar(this decimal saque) {
+            return saque;
         }
-        public void Historico() {
-
-            var date = DateTime.Now;
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            System.Console.WriteLine($"{date}");
-
+        public static string Extrato(this string extrato) {
+            return extrato;
         }
     }
 
