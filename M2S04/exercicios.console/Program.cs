@@ -13,13 +13,9 @@ ligue a lâmpada e apresente novamente as informações de estado.
 
 */
 
-namespace Eletrica {
+namespace Iluminacao {
    public static class Lampada {
-      
-      // public NovaAbstracao MyAbstraction { get; set; }
-      // public Lampada(NovaAbstracao MyAbstraction) {
-      //    this.MyAbstraction = MyAbstraction;
-      // }
+      private static string tipoDeLampada = "LED";
       static void Main() {
      
          System.Console.WriteLine("Acender a lâmpada? (sim ou não)");
@@ -30,7 +26,7 @@ namespace Eletrica {
 
          LigadoDesligado();
 
-         NovaAbstracao.WattsAndVolts();
+         NovaAbstracao.Unidades();
       
       }
       public static void LigadoDesligado() {
@@ -39,24 +35,29 @@ namespace Eletrica {
 
          string ligadoOuDesligado = (estaLigadoOuDesligado == "sim") ?
             
-            "Ligada! Não esqueça de desligar quando sair :)" : "Desligada";
+         "Ligada! Não esqueça de desligar quando sair :)" : "Desligada";
          
          System.Console.WriteLine(ligadoOuDesligado);
       }
-   }
-   public class NovaAbstracao {
-      public double Potencia { get; set; }
-      public double Tensao { get; set; }
-      public NovaAbstracao() {
-         Potencia = 100;
-         Tensao = 120;
-      }
-      public static void WattsAndVolts() {
-         NovaAbstracao watts = new NovaAbstracao();
-         System.Console.WriteLine($"{watts.Potencia} W");
+      public class NovaAbstracao {
+         public double Potencia { get; set; }
+         public string Tensao { get; set; }
+         public double Lumen { get; set; }
+         public NovaAbstracao() {
+            Potencia = 9.8;
+            Tensao = "Bivolt";
+            Lumen = 1100;
+         }
+         public static void Unidades() {
+            NovaAbstracao watts = new NovaAbstracao();
+            System.Console.WriteLine($"{watts.Potencia} W");
 
-         NovaAbstracao volts = new NovaAbstracao();
-         System.Console.WriteLine($"{volts.Tensao} V");
+            NovaAbstracao volts = new NovaAbstracao();
+            System.Console.WriteLine($"{volts.Tensao} V");
+
+            NovaAbstracao lumens = new NovaAbstracao();
+            System.Console.WriteLine($"{lumens.Tensao} lm");
+         }
       }
    }
 }
