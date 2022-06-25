@@ -14,61 +14,40 @@ ligue a lâmpada e apresente novamente as informações de estado.
 */
 
 namespace Iluminacao {
-   public static class Lampada {
-      private static string tipoDeLampada = "LED";
+   public class Lampada {
+      private static bool ligada;
       static void Main() {
+
+         Lampada2 lampada = new Lampada2();
+
+         lampada.Potencia = 9.8;
+         lampada.Tensao = 127;
+
+         Console.WriteLine($"Potência da lâmpada: {lampada.Potencia} W");
+         Console.WriteLine($"Tensão Elétrica: {lampada.Tensao} V");
+
+         Ligar();
+      }
+      public static void Ligar() {
+         Console.WriteLine("Acender a lâmpada? (true or false)");
+         ligada = Convert.ToBoolean(Console.ReadLine());
+         if (ligada) {
+            Console.Write("Ligada");
+         } else {
+            Console.Write("Desligada");
+         }
          
-         LigadoDesligado();
-
-         System.Console.WriteLine("\n ------ Característica ------ \n");
-
-         System.Console.WriteLine($"Tipo de Lâmpada: {tipoDeLampada}");
-
-         NovaAbstracao.Unidades();
-      
       }
-      public static void LigadoDesligado() {
-
-         Console.WriteLine("Acender a lâmpada? (sim ou não)");
-
-         var estaLigada = Console.ReadLine();
-
-         if (estaLigada == "sim") {
-         
-         Console.Write("Ligada! Não esqueça de desligar quando sair :)\n");
-
-         Console.Write("Apagar a lâmpada? (SIM)\n");
-           
-         var apagarLampada = Console.ReadLine();
-
-         string apaga = (apagarLampada == "SIM") ? "Desligada" : "Ligada";
-
-         System.Console.WriteLine(apaga);
-
-         }
+      public void Desligar() {
+         ligada = false;
       }
-      public class NovaAbstracao {
-         private double potencia = 9.8;
-         private string tensao = "Bivolt";
-         private int lumen = 1100;
-         public double Potencia { get; set; }
-         public string Tensao { get; set; }
-         public int Lumen { get; set; }
-         public NovaAbstracao() {
-            Potencia = potencia;
-            Tensao = tensao;
-            Lumen = lumen;
-         }
-         public static void Unidades() {
-            NovaAbstracao watts = new NovaAbstracao();
-            System.Console.WriteLine($"Potência da Lâmpada: {watts.Potencia} W");
+   }
+   public class Lampada2 {
+      public double Potencia { get; set; }
+      public int Tensao { get; set; }
 
-            NovaAbstracao volts = new NovaAbstracao();
-            System.Console.WriteLine($"Tensão Elétrica: {volts.Tensao} ");
+   }
+   public class Lampada3 {
 
-            NovaAbstracao lumens = new NovaAbstracao();
-            System.Console.WriteLine($"Quanto Ilumina: {lumens.Lumen} lm");
-         }
-      }
    }
 }
