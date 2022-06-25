@@ -17,46 +17,57 @@ namespace Iluminacao {
    public static class Lampada {
       private static string tipoDeLampada = "LED";
       static void Main() {
-     
-         System.Console.WriteLine("Acender a lâmpada? (sim ou não)");
          
          LigadoDesligado();
 
-         System.Console.WriteLine("Apagar a lâmpada? (SIM)");
+         System.Console.WriteLine("\n ------ Característica ------ \n");
 
-         LigadoDesligado();
+         System.Console.WriteLine($"Tipo de Lâmpada: {tipoDeLampada}");
 
          NovaAbstracao.Unidades();
       
       }
       public static void LigadoDesligado() {
 
-         var estaLigadoOuDesligado = Console.ReadLine();
+         Console.WriteLine("Acender a lâmpada? (sim ou não)");
 
-         string ligadoOuDesligado = (estaLigadoOuDesligado == "sim") ?
-            
-         "Ligada! Não esqueça de desligar quando sair :)" : "Desligada";
+         var estaLigada = Console.ReadLine();
+
+         if (estaLigada == "sim") {
          
-         System.Console.WriteLine(ligadoOuDesligado);
+         Console.Write("Ligada! Não esqueça de desligar quando sair :)\n");
+
+         Console.Write("Apagar a lâmpada? (SIM)\n");
+           
+         var apagarLampada = Console.ReadLine();
+
+         string apaga = (apagarLampada == "SIM") ? "Desligada" : "Ligada";
+
+         System.Console.WriteLine(apaga);
+
+         }
       }
       public class NovaAbstracao {
+         private double potencia = 9.8;
+         private string tensao = "Bivolt";
+         private int lumen = 1100;
          public double Potencia { get; set; }
          public string Tensao { get; set; }
-         public double Lumen { get; set; }
+         public int Lumen { get; set; }
          public NovaAbstracao() {
-            Potencia = 9.8;
-            Tensao = "Bivolt";
-            Lumen = 1100;
+            Potencia = potencia;
+            Tensao = tensao;
+            Lumen = lumen;
          }
          public static void Unidades() {
             NovaAbstracao watts = new NovaAbstracao();
-            System.Console.WriteLine($"{watts.Potencia} W");
+            System.Console.WriteLine($"Potência da Lâmpada: {watts.Potencia} W");
 
             NovaAbstracao volts = new NovaAbstracao();
-            System.Console.WriteLine($"{volts.Tensao} V");
+            System.Console.WriteLine($"Tensão Elétrica: {volts.Tensao} ");
 
             NovaAbstracao lumens = new NovaAbstracao();
-            System.Console.WriteLine($"{lumens.Tensao} lm");
+            System.Console.WriteLine($"Quanto Ilumina: {lumens.Lumen} lm");
          }
       }
    }
