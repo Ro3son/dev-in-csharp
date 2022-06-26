@@ -23,19 +23,27 @@ namespace Iluminacao {
          lampada.Potencia = 9.8;
          lampada.Tensao = 127;
 
+         Lampada.Ligar();
+
          Console.WriteLine($"Potência da lâmpada: {lampada.Potencia} W");
          Console.WriteLine($"Tensão Elétrica: {lampada.Tensao} V");
 
-         Ligar();
       }
       public static void Ligar() {
-         Console.WriteLine("Acender a lâmpada? (true or false)");
-         ligada = Convert.ToBoolean(Console.ReadLine());
-         if (ligada) {
-            Console.Write("Ligada");
-         } else {
-            Console.Write("Desligada");
+
+         Console.WriteLine("Lâmpada Ligada!");
+
+         ligada = true;
+
+         while (ligada) {
+            
+            Console.WriteLine("Não se esqueça de desligar ao sair!");
+
+            ligada = Convert.ToBoolean(Console.ReadLine());
+
          }
+
+         Console.WriteLine("Desligada!");
          
       }
       public void Desligar() {
