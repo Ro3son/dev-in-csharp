@@ -1,4 +1,4 @@
-﻿/* Ex 1, 2, 3
+﻿/* Ex 1, 2, 3, 4
 
 Desenvolva uma abstração de uma lâmpada, a qual pode ser ligada e desligada. 
 Também deve ser possível observar o estado da lâmpada (se desligada ou ligada).
@@ -10,6 +10,11 @@ Essa nova classe deve ser usada como um tipo de uma propriedade da classe Lâmpa
 Desenvolva um programa para testar as classes desenvolvidas nos exercícios 1 e 2. 
 Crie uma nova lâmpada, apresente no console as informações de estado (se ligada ou desligada, potência e voltagem), 
 ligue a lâmpada e apresente novamente as informações de estado.
+
+Modiﬁque a abstração da lâmpada criada anteriormente para incluir o caso de uma lâmpada queimar ao ser ligada. 
+Sabe-se que existe uma chance de 15% da lâmpada queimar ao ser ligada. 
+Dica: neste exercício é importante pesquisar na biblioteca de classes 
+fornecida pela linguagem de programação uma classe que dê suporte à geração de números aleatórios.
 
 */
 
@@ -24,6 +29,8 @@ namespace Iluminacao {
          lampada.Tensao = 127;
 
          Lampada.Ligar();
+
+         Lampada.QueimouAoLigar();
 
          Console.WriteLine($"Potência da lâmpada: {lampada.Potencia} W");
          Console.WriteLine($"Tensão Elétrica: {lampada.Tensao} V");
@@ -43,11 +50,21 @@ namespace Iluminacao {
 
          }
 
-         Console.WriteLine("Desligada!");
+         Lampada.Desligar();
          
       }
-      public void Desligar() {
+      public static void Desligar() {
          ligada = false;
+         Console.WriteLine("Desligada!\n");
+      }
+      public static void QueimouAoLigar() {
+
+         Console.WriteLine("Lâmpada Ligada!");
+
+         ligada = true && false;
+
+         Console.WriteLine("Queimou! Não se esqueça de trocar a lâmpada");
+
       }
    }
    public class Lampada2 {
@@ -59,3 +76,4 @@ namespace Iluminacao {
 
    }
 }
+
