@@ -30,7 +30,7 @@ namespace Iluminacao {
 
          Lampada.Ligar();
 
-         Lampada.QueimouAoLigar();
+         Lampada2.QueimouAoLigar();
 
          Console.WriteLine($"Potência da lâmpada: {lampada.Potencia} W");
          Console.WriteLine($"Tensão Elétrica: {lampada.Tensao} V");
@@ -54,26 +54,31 @@ namespace Iluminacao {
          
       }
       public static void Desligar() {
+
          ligada = false;
+
          Console.WriteLine("Desligada!\n");
+         
       }
-      public static void QueimouAoLigar() {
+   
+   }
+   public class Lampada2 {
+      private static bool estaQueimada;
+      public double Potencia { get; set; }
+      public int Tensao { get; set; }
+        public static void QueimouAoLigar() {
 
          Console.WriteLine("Lâmpada Ligada!");
 
-         ligada = true && false;
+         estaQueimada = true && false;
 
-         Console.WriteLine("Queimou! Não se esqueça de trocar a lâmpada");
+         Console.WriteLine("Queimou! Não se esqueça de trocar a lâmpada.");
 
       }
-   }
-   public class Lampada2 {
-      public double Potencia { get; set; }
-      public int Tensao { get; set; }
 
    }
    public class Lampada3 {
-
+      
    }
 }
 
