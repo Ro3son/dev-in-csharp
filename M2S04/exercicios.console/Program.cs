@@ -21,20 +21,23 @@ fornecida pela linguagem de programação uma classe que dê suporte à geraçã
 namespace Iluminacao {
    public class Lampada {
       private static bool ligada;
-      private static bool estaQueimada;
+      public NovaLampada Lamp { get; set; }
+      public Lampada() {
+         Lamp = new NovaLampada();
+      }
       static void Main() {
 
-         Lampada2 lampada = new Lampada2();
+         Lampada lampada = new Lampada();
 
-         lampada.Potencia = 9.8;
-         lampada.Tensao = 127;
+         lampada.Lamp = new NovaLampada();
+
+         lampada.Lamp.Potencia = 9.8;
+         lampada.Lamp.Tensao = 127;
 
          Lampada.Ligar();
 
-         Lampada.QueimouAoLigar();
-
-         Console.WriteLine($"Potência da lâmpada: {lampada.Potencia} W");
-         Console.WriteLine($"Tensão Elétrica: {lampada.Tensao} V");
+         Console.WriteLine($"Potência da lâmpada: {lampada.Lamp.Potencia} W");
+         Console.WriteLine($"Tensão Elétrica: {lampada.Lamp.Tensao} V");
 
       }
       public static void Ligar() {
@@ -44,7 +47,7 @@ namespace Iluminacao {
          ligada = true;
 
          while (ligada) {
-            
+
             Console.WriteLine("Não se esqueça de desligar ao sair!");
 
             ligada = Convert.ToBoolean(Console.ReadLine());
@@ -52,72 +55,14 @@ namespace Iluminacao {
          }
 
          Lampada.Desligar();
-         
+
       }
       public static void Desligar() {
 
-         ligada = false;
+            ligada = false;
 
-         Console.WriteLine("Desligada!\n");
-         
+            Console.WriteLine("Desligada!\n");
+
       }
-      public static void QueimouAoLigar() {
-
-         Console.WriteLine("Lâmpada Ligada!");
-
-         estaQueimada = true && false;
-
-         Console.WriteLine("Queimou! Não se esqueça de trocar a lâmpada.\n");
-         
-      }
-   
    }
-   public class Lampada2 {
-      public double Potencia { get; set; }
-      public int Tensao { get; set; }
-
-   }
-   public class Lampada3 { }
 }
-
-// Random rnd = new Random();
-
-// string[] lampada = { "Ligada", "Desligada", "Queimada" };
-
-// for (int i = 0; i <= 4; i++) {
-
-//     int mIndex = rnd.Next(lampada.Length); // Generate random indexes
-
-//     Console.WriteLine("{0}", lampada[mIndex]);
-
-// }
-
-// Generate and display 5 random integers between 0 and 100.
-// Console.WriteLine("Five random integers between 0 and 100:");
-// for (int ctr = 0; ctr <= 4; ctr++)
-//     Console.Write("{0,8:N0}", rand.Next(101));
-// Console.WriteLine();
-
-// public class Class1 {
-//    public Class2 Obj { get; set; }
-//    public Class1() {
-//      Obj = new Class2();
-//    }
-//    static void Main() {
-
-//     Class1 obj1 = new Class1();
-
-//     obj1.Obj = new Class2();
-
-//     obj1.Obj.Potencia = 100;
-
-//     obj1.Obj.Tensao = 100;
-
-//    }
-
-// }
-// public class Class2 {
-//     public double Potencia { get; set; }
-//     public int Tensao { get; set; }
-
-// }
