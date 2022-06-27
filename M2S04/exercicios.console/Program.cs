@@ -21,6 +21,7 @@ fornecida pela linguagem de programação uma classe que dê suporte à geraçã
 namespace Iluminacao {
    public class Lampada {
       private static bool ligada;
+      private static bool estaQueimada;
       static void Main() {
 
          Lampada2 lampada = new Lampada2();
@@ -30,7 +31,7 @@ namespace Iluminacao {
 
          Lampada.Ligar();
 
-         Lampada2.QueimouAoLigar();
+         Lampada.QueimouAoLigar();
 
          Console.WriteLine($"Potência da lâmpada: {lampada.Potencia} W");
          Console.WriteLine($"Tensão Elétrica: {lampada.Tensao} V");
@@ -60,25 +61,63 @@ namespace Iluminacao {
          Console.WriteLine("Desligada!\n");
          
       }
-   
-   }
-   public class Lampada2 {
-      private static bool estaQueimada;
-      public double Potencia { get; set; }
-      public int Tensao { get; set; }
-        public static void QueimouAoLigar() {
+      public static void QueimouAoLigar() {
 
          Console.WriteLine("Lâmpada Ligada!");
 
          estaQueimada = true && false;
 
-         Console.WriteLine("Queimou! Não se esqueça de trocar a lâmpada.");
-
+         Console.WriteLine("Queimou! Não se esqueça de trocar a lâmpada.\n");
+         
       }
+   
+   }
+   public class Lampada2 {
+      public double Potencia { get; set; }
+      public int Tensao { get; set; }
 
    }
-   public class Lampada3 {
-      
-   }
+   public class Lampada3 { }
 }
 
+// Random rnd = new Random();
+
+// string[] lampada = { "Ligada", "Desligada", "Queimada" };
+
+// for (int i = 0; i <= 4; i++) {
+
+//     int mIndex = rnd.Next(lampada.Length); // Generate random indexes
+
+//     Console.WriteLine("{0}", lampada[mIndex]);
+
+// }
+
+// Generate and display 5 random integers between 0 and 100.
+// Console.WriteLine("Five random integers between 0 and 100:");
+// for (int ctr = 0; ctr <= 4; ctr++)
+//     Console.Write("{0,8:N0}", rand.Next(101));
+// Console.WriteLine();
+
+// public class Class1 {
+//    public Class2 Obj { get; set; }
+//    public Class1() {
+//      Obj = new Class2();
+//    }
+//    static void Main() {
+
+//     Class1 obj1 = new Class1();
+
+//     obj1.Obj = new Class2();
+
+//     obj1.Obj.Potencia = 100;
+
+//     obj1.Obj.Tensao = 100;
+
+//    }
+
+// }
+// public class Class2 {
+//     public double Potencia { get; set; }
+//     public int Tensao { get; set; }
+
+// }
