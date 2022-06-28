@@ -18,13 +18,9 @@ fornecida pela linguagem de programação uma classe que dê suporte à geraçã
 
 */
 
-namespace Iluminacao {
-   public class Lampada {
-      private static bool ligada;
-      public NovaLampada Lamp { get; set; }
-      public Lampada() {
-         Lamp = new NovaLampada();
-      }
+namespace Iluminacao
+{
+    public partial class Program {
       static void Main() {
 
          Lampada lampada = new Lampada();
@@ -39,30 +35,8 @@ namespace Iluminacao {
          Console.WriteLine($"Potência da lâmpada: {lampada.Lamp.Potencia} W");
          Console.WriteLine($"Tensão Elétrica: {lampada.Lamp.Tensao} V");
 
-      }
-      public static void Ligar() {
-
-         Console.WriteLine("Lâmpada Ligada!");
-
-         ligada = true;
-
-         while (ligada) {
-
-            Console.WriteLine("Não se esqueça de desligar ao sair!");
-
-            ligada = Convert.ToBoolean(Console.ReadLine());
-
-         }
-
-         Lampada.Desligar();
 
       }
-      public static void Desligar() {
-
-            ligada = false;
-
-            Console.WriteLine("Desligada!\n");
-
-      }
+      
    }
 }
