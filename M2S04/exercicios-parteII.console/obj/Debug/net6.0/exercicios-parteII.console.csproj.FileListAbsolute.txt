@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\bin\Debug\net6.0\exercicios-parteII.console.exe
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\bin\Debug\net6.0\exercicios-parteII.console.deps.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\bin\Debug\net6.0\exercicios-parteII.console.runtimeconfig.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\bin\Debug\net6.0\exercicios-parteII.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\bin\Debug\net6.0\exercicios-parteII.console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\exercicios-parteII.console.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\exercicios-parteII.console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\exercicios-parteII.console.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\exercicios-parteII.console.AssemblyInfo.cs
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\exercicios-parteII.console.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\exercicios-parteII.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\refint\exercicios-parteII.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\exercicios-parteII.console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\exercicios-parteII.console.genruntimeconfig.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\exercicios-parteII.console\obj\Debug\net6.0\ref\exercicios-parteII.console.dll
