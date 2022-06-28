@@ -13,39 +13,63 @@ namespace Banco
 {
     public class Conta
     {
-        string nomeCliente;
-        int numeroConta;
-        decimal saldo;
-
-        public Conta()
+        private string nomeCliente;
+        private int numeroConta;
+        private decimal saldoConta;
+        private decimal deposito, saque;
+        private decimal aposDeposito, aposSaque;
+        public Conta(string nome, int conta, decimal saldo)
         {
-            nomeCliente = "Robson";
-            numeroConta = 1003104;
-            saldo = 25.60m;
+            nomeCliente = nome;
+            numeroConta = conta;
+            saldoConta = saldo;
         }
+        static void Main() {
 
-        public Depositar()
-        {
+            Conta conta = new Conta("Robson", 100310, 25.00m);
+
+            Conta conta1 = new Conta("Iolanda", 345678, 100.000m);
+
+            Console.WriteLine(conta.nomeCliente);
+
+            conta.Depositar();
+
+            conta.Sacar();
+
+            conta.ObterSaldo();
+
+            conta.ObterNumero();
+
+            conta.ObterNomeCliente();
 
         }
-        public Sacar()
-        {
-
+        public void Depositar()
+        {  
+           Console.WriteLine("Digite o valor para depósito: ");
+           deposito = Convert.ToDecimal(Console.ReadLine());
+           Console.WriteLine($"Você depositou: {deposito} ");
+           aposDeposito = (deposito + saldoConta);
+           Console.WriteLine($"Saldo Atual: {aposDeposito} \n");
         }
-
-        public ObterSaldo()
+        public void Sacar()
         {
-
+           Console.WriteLine("Digite o valor para saque: ");
+           saque = Convert.ToDecimal(Console.ReadLine());
+           Console.WriteLine($"Você sacou: {saque} ");
+           aposSaque = (aposDeposito - saque);
+           Console.WriteLine($"Saldo Atual: {aposSaque} \n");
         }
-
-        public ObterNumero()
+        public void ObterSaldo()
         {
-
+          Console.WriteLine($"Saldo: {aposSaque}");
         }
-
-        public ObterNomeCliente()
+        public void ObterNumero()
         {
-
+          Console.WriteLine($"Número da conta: {numeroConta}");
+        }
+        public void ObterNomeCliente()
+        {
+          Console.WriteLine($"Nome do cliente: {nomeCliente}");
         }
     }
 }
