@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\imcPessoa.console.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\imcPessoa.console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\imcPessoa.console.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\imcPessoa.console.AssemblyInfo.cs
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\imcPessoa.console.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\bin\Debug\net6.0\imcPessoa.console.exe
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\bin\Debug\net6.0\imcPessoa.console.deps.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\bin\Debug\net6.0\imcPessoa.console.runtimeconfig.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\bin\Debug\net6.0\imcPessoa.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\bin\Debug\net6.0\imcPessoa.console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\imcPessoa.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\refint\imcPessoa.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\imcPessoa.console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\imcPessoa.console.genruntimeconfig.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\imcPessoa.console\obj\Debug\net6.0\ref\imcPessoa.console.dll
