@@ -20,7 +20,7 @@ namespace Banco
             deposito = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine($"Você depositou: {deposito} ");
             aposDeposito = (deposito + saldoConta);
-            Console.WriteLine($"Saldo Atual: {aposDeposito} \n");
+            Console.WriteLine($"Saldo: {aposDeposito} \n");
         }
         public void Sacar()
         {
@@ -28,11 +28,11 @@ namespace Banco
             saque = Convert.ToDecimal(Console.ReadLine());
             Console.WriteLine($"Você sacou: {saque} ");
             aposSaque = (aposDeposito - saque);
-            Console.WriteLine($"Saldo Atual: {aposSaque} \n");
+            Console.WriteLine($"Saldo: {aposSaque} \n");
         }
         public void ObterSaldo()
         {
-            Console.WriteLine($"Saldo: {aposSaque}");
+            Console.WriteLine($"Saldo Atual: {aposSaque}");
         }
         public void ObterNumero()
         {
