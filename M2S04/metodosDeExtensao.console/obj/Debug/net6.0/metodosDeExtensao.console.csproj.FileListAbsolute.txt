@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\metodosDeExtensao.console.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\metodosDeExtensao.console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\metodosDeExtensao.console.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\metodosDeExtensao.console.AssemblyInfo.cs
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\metodosDeExtensao.console.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\bin\Debug\net6.0\metodosDeExtensao.console.exe
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\bin\Debug\net6.0\metodosDeExtensao.console.deps.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\bin\Debug\net6.0\metodosDeExtensao.console.runtimeconfig.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\bin\Debug\net6.0\metodosDeExtensao.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\bin\Debug\net6.0\metodosDeExtensao.console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\metodosDeExtensao.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\refint\metodosDeExtensao.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\metodosDeExtensao.console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\metodosDeExtensao.console.genruntimeconfig.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S04\metodosDeExtensao.console\obj\Debug\net6.0\ref\metodosDeExtensao.console.dll
