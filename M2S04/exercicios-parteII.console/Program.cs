@@ -7,69 +7,30 @@ Faça um método obterSaldo que retorne o saldo do cliente. Faça um método obt
 Faça um método obterNomeCliente que retorna o nome do cliente titular da conta.
 
 */
+
 using System;
 
 namespace Banco
 {
-    public class Conta
+  public class Program
+  {
+    static void Main()
     {
-        private string nomeCliente;
-        private int numeroConta;
-        private decimal saldoConta;
-        private decimal deposito, saque;
-        private decimal aposDeposito, aposSaque;
-        public Conta(string nome, int conta, decimal saldo)
-        {
-            nomeCliente = nome;
-            numeroConta = conta;
-            saldoConta = saldo;
-        }
-        static void Main() {
 
-            Conta conta = new Conta("Robson", 100310, 25.00m);
+      Conta conta = new Conta("Robson", 100310, 25.00m);
 
-            Conta conta1 = new Conta("Iolanda", 345678, 100.000m);
+      Conta conta1 = new Conta("Iolanda", 345678, 100.000m);
 
-            Console.WriteLine(conta.nomeCliente);
+      conta.Depositar();
 
-            conta.Depositar();
+      conta.Sacar();
 
-            conta.Sacar();
+      conta.ObterSaldo();
 
-            conta.ObterSaldo();
+      conta.ObterNumero();
 
-            conta.ObterNumero();
+      conta.ObterNomeCliente();
 
-            conta.ObterNomeCliente();
-
-        }
-        public void Depositar()
-        {  
-           Console.WriteLine("Digite o valor para depósito: ");
-           deposito = Convert.ToDecimal(Console.ReadLine());
-           Console.WriteLine($"Você depositou: {deposito} ");
-           aposDeposito = (deposito + saldoConta);
-           Console.WriteLine($"Saldo Atual: {aposDeposito} \n");
-        }
-        public void Sacar()
-        {
-           Console.WriteLine("Digite o valor para saque: ");
-           saque = Convert.ToDecimal(Console.ReadLine());
-           Console.WriteLine($"Você sacou: {saque} ");
-           aposSaque = (aposDeposito - saque);
-           Console.WriteLine($"Saldo Atual: {aposSaque} \n");
-        }
-        public void ObterSaldo()
-        {
-          Console.WriteLine($"Saldo: {aposSaque}");
-        }
-        public void ObterNumero()
-        {
-          Console.WriteLine($"Número da conta: {numeroConta}");
-        }
-        public void ObterNomeCliente()
-        {
-          Console.WriteLine($"Nome do cliente: {nomeCliente}");
-        }
     }
+  }
 }
