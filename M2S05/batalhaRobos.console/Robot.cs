@@ -3,9 +3,9 @@ namespace ProjectBattleRobots
 {
     public abstract class Robot
     {
-        public string NomeRobo { get; set; }
+        public string? NomeRobo { get; set; }
         public int PontosVida { get; set; }
-        public string Status { get; set; }
+        public string? Status { get; set; }
         
         public void Iniciar()
         {
