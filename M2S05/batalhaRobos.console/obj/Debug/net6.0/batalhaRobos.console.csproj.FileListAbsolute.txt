@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\bin\Debug\net6.0\batalhaRobos.console.exe
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\bin\Debug\net6.0\batalhaRobos.console.deps.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\bin\Debug\net6.0\batalhaRobos.console.runtimeconfig.json
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\bin\Debug\net6.0\batalhaRobos.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\bin\Debug\net6.0\batalhaRobos.console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\batalhaRobos.console.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\batalhaRobos.console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\batalhaRobos.console.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\batalhaRobos.console.AssemblyInfo.cs
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\batalhaRobos.console.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\batalhaRobos.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\refint\batalhaRobos.console.dll
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\batalhaRobos.console.pdb
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\batalhaRobos.console.genruntimeconfig.cache
+C:\Users\PC\Desktop\BACK-END\dev-in-csharp\M2S05\batalhaRobos.console\obj\Debug\net6.0\ref\batalhaRobos.console.dll
