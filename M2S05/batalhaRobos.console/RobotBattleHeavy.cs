@@ -5,7 +5,7 @@ namespace ProjectBattleRobots
     {
         public override void CausarDano()
         {
-          
+          int roboBatalhaPesadoCausaDano = 20;
         }
     }
 }
