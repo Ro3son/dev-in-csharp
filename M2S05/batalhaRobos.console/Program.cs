@@ -6,20 +6,37 @@ namespace ProjectBattleRobots
         static void Main()
         {
             RobotBattleHeavy robot1 = new RobotBattleHeavy();
-            robot1.NomeRobo = "RobotOne";
-            Console.WriteLine($"Nome do Robô: {robot1.NomeRobo}");
+            robot1.NomeRobo = "Bender";
             robot1.PontosVida = 20;
-            Console.WriteLine($"Pontos de vida: {robot1.PontosVida}");
-            robot1.Status = "Desligado";
-            Console.WriteLine($"Status: {robot1.Status}");
-
+           
+            
             RobotBattleLight robot2 = new RobotBattleLight();
-            robot2.NomeRobo = "RobotTwo";
-            Console.WriteLine($"Nome do Robô: {robot2.NomeRobo}");
+            robot2.NomeRobo = "R2D2";
             robot2.PontosVida = 40;
-            Console.WriteLine($"Pontos de vida: {robot2.PontosVida}");
-            robot2.Status = "Desligado";
-            Console.WriteLine($"Status: {robot2.Status}");
+         
+
+            Console.WriteLine(" ---------- Batalha Entre Robôs ---------- \n");
+
+            Console.WriteLine(
+                $"{robot1.NomeRobo} vs {robot2.NomeRobo} \n" +
+                $"Pontos de Vida: \n {robot1.PontosVida} ----- {robot2.PontosVida} \n"
+            );
+
+            Console.WriteLine("Iniciar Partida? (s/n)");
+
+            var iniciarPartida = Console.ReadLine();
+
+            if (iniciarPartida == "s") {
+                Console.WriteLine($"{robot1.NomeRobo}");
+                robot1.Iniciar();
+                Console.WriteLine($"{robot2.NomeRobo}");
+                robot2.Iniciar();
+                Console.WriteLine($"{robot2.NomeRobo} Ataca {robot1.NomeRobo}");
+                robot2.CausarDano();
+                Console.WriteLine($"{robot1.NomeRobo} Não fica parado e ataca {robot2.NomeRobo}");
+                robot1.CausarDano();
+                Console.WriteLine($"Pontos de Vida: \n {robot1.PontosVida} ----- {robot2.PontosVida} \n");
+            }
         }
     }
 }
