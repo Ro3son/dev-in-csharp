@@ -5,19 +5,26 @@ namespace ProjectBattleRobots
     {
         public string? NomeRobo { get; set; }
         public int PontosVida { get; set; }
-        public string? Status { get; set; }
+        EStatus Status { get; set; }
         
         public void Iniciar()
         {
-            EStatus status = EStatus.Ligado;
+            Status = EStatus.Ligado;
+            Console.WriteLine($"{Status}");
         }
         public void Parar()
         {
-            EStatus status = EStatus.Desligado;
+            Status = EStatus.Desligado;
+            Console.WriteLine($"{Status}");
         }
         public abstract void CausarDano();
-        public void ReduzirPontosVida() {
+        public void ReduzirPontosVida(int dano) {
+            PontosVida = PontosVida - dano;
 
+            if (PontosVida == 0) {
+                EStatus status = EStatus.Destruido;
+                Console.WriteLine($"{status}");
+            }
         }
     }
 }
