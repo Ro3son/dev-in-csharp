@@ -1,11 +1,42 @@
 
 namespace ProjectBattleRobots
 {
-    public class PartidaBatalha {
-       
-       public void Batalhar(Robot robot1, Robot robot2) {
-          robot1.CausarDano();
-          robot2.CausarDano();
-       }
+    public static class PartidaBatalha
+    {
+        public static void Batalhar(Robot robot1, Robot robot2)
+        {
+
+            Console.WriteLine(" ---------- Batalha Entre Robôs ---------- \n");
+
+            Console.WriteLine(
+                $"{robot1.NomeRobo} vs {robot2.NomeRobo} \n" +
+                $"Pontos de Vida: \n {robot1.PontosVida} ----- {robot2.PontosVida} \n"
+            );
+
+            Console.WriteLine("Iniciar Partida? (s/n)");
+
+            var iniciarPartida = Console.ReadLine();
+
+
+
+            if (iniciarPartida == "s")
+            {
+                Console.WriteLine($"{robot1.NomeRobo}");
+                robot1.Iniciar();
+                Console.WriteLine($"{robot2.NomeRobo}");
+                robot2.Iniciar();
+                Console.WriteLine("\n");
+                Console.WriteLine($"{robot2.NomeRobo} Ataca {robot1.NomeRobo}. ");
+                Console.WriteLine("\n");
+                Console.WriteLine($"{robot1.NomeRobo} Ataca {robot2.NomeRobo}. ");
+                Console.WriteLine($"{robot1.NomeRobo} está aguardando... \n");
+                Console.WriteLine(
+                "Pontos de vida reduzido \n " +
+                "Resultado: \n" +
+                $"{robot1.NomeRobo} vs {robot2.NomeRobo} \n" +
+                $"Pontos de Vida: \n {robot1.ReduzirPontosVida(robot2.CausarDano())} ----- {robot2.ReduzirPontosVida(robot1.CausarDano())} \n");
+
+            }
+        }
     }
 }
