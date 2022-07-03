@@ -6,7 +6,13 @@ namespace ProjectBattleRobots
         public string? NomeRobo { get; set; }
         public int PontosVida { get; set; }
         EStatus Status { get; set; }
-        
+
+        public Robot(string nome, int pontos)
+        {
+            NomeRobo = nome;
+            PontosVida = pontos;
+        }
+
         public void Iniciar()
         {
             Status = EStatus.Ligado;
@@ -17,14 +23,17 @@ namespace ProjectBattleRobots
             Status = EStatus.Desligado;
             Console.WriteLine($"{Status}");
         }
-        public abstract void CausarDano();
-        public void ReduzirPontosVida(int dano) {
+        public abstract int CausarDano();
+        public int ReduzirPontosVida(int dano)
+        {
             PontosVida = PontosVida - dano;
 
-            if (PontosVida == 0) {
+            if (PontosVida == 0)
+            {
                 EStatus status = EStatus.Destruido;
                 Console.WriteLine($"{status}");
             }
+            return PontosVida;
         }
     }
 }
