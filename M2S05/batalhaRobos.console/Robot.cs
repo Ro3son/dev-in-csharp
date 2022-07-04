@@ -3,8 +3,8 @@ namespace ProjectBattleRobots
 {
     public abstract class Robot
     {
-        public string? NomeRobo { get; set; }
-        public int PontosVida { get; set; }
+        public string? NomeRobo { get; private set; }
+        public int PontosVida { get;  protected set; }
         EStatus Status { get; set; }
 
         public Robot(string nome, int pontos)
