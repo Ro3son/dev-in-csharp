@@ -6,6 +6,7 @@ Dado que:
 
 Crie um console application aplicando os conceitos de exceptions mostrados na aula que abstraia 
 o funcionamento de um sistema para lançamento de notas de um professor.
+
 O programa precisa ter três opções: lançar nota, listar turmas e visualizar boletim do aluno.
 A aplicação precisa conter uma lista de alunos e uma lista de disciplinas pré-definidas (em memória).
 No lançamento o programa deve permitir o usuário(professor) selecionar um aluno e uma disciplina 
@@ -30,16 +31,8 @@ Informativos extras:
 
 namespace LancamentoNotas
 {
-    public class Alunos
+    public class Program
     {
-        public string NomeAluno { get; set; }
-        public int NumeroChamada { get; set; }
-
-        public Alunos(string nome, int numChamada)
-        {
-            NomeAluno = nome;
-            NumeroChamada = numChamada;
-        }
         static void Main()
         {
             List<Alunos> alunos = new List<Alunos>
@@ -51,6 +44,7 @@ namespace LancamentoNotas
             };
 
             Console.WriteLine("Alunos --- nº chamada");
+
             foreach (Alunos aluno in alunos)
             {
                 Console.WriteLine(@$"{aluno.NomeAluno}, {aluno.NumeroChamada}");
@@ -67,23 +61,16 @@ namespace LancamentoNotas
             };
 
             Console.WriteLine("Disciplina --- nº Avaliações");
+
             foreach (Disciplinas disciplina in disciplinas)
             {
                 Console.WriteLine(@$"{disciplina.NomeDisciplina}, {disciplina.QuantidadeAvaliações}");
             }
+
+            Console.Write("\n");
+
+            List<Notas> notas = new List<Notas>();
+            
         }
-
-    }
-    public class Disciplinas
-    {
-        public string NomeDisciplina { get; set; }
-        public int QuantidadeAvaliações { get; set; }
-
-        public Disciplinas(string disciplina, int avaliacoes)
-        {
-            NomeDisciplina = disciplina;
-            QuantidadeAvaliações = avaliacoes;
-        }
-
     }
 }
