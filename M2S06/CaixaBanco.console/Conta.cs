@@ -5,6 +5,9 @@ namespace Banco
         public string Cliente { get; set; }
         public decimal Saldo { get; set; }
         public decimal Saque { get; set; }
+        public decimal SaldoAposSaque { get; set; }
+        public decimal Deposito { get; set; }
+        public decimal SaldoAposDeposito { get; set; }
         public decimal LimiteSaque { get; set; }
 
         public Conta()
@@ -17,21 +20,19 @@ namespace Banco
         {
             return Saldo;
         }
-        public decimal Sacar()
+        public void Sacar()
         {
-            Console.WriteLine("Digite o valor para saque: ");
-            decimal saque = Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine($"Você sacou: {saque}");
-            var subtracao = (Saldo - saque);
-            return subtracao;
+            Saque = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine($"Você sacou: {Saque}");
+            SaldoAposSaque = (Saldo - Saque);
+            Console.WriteLine($"{SaldoAposSaque}");
         }
-        public decimal Depositar()
+        public void Depositar()
         {
-            Console.WriteLine("Digite o valor depósito: ");
-            decimal deposito = Convert.ToDecimal(Console.ReadLine());
-            Console.WriteLine($"Você depositou: {deposito}");
-            var soma = (Saldo + deposito);
-            return soma;
+            Deposito = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine($"Você depositou: {Deposito}");
+            SaldoAposDeposito = (SaldoAposSaque + Deposito);
+            Console.WriteLine($"{SaldoAposDeposito}");
         }
     }
 }
