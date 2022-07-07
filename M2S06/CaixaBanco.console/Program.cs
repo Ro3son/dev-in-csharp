@@ -16,24 +16,36 @@ Informativos extras:
 */
 
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Banco
 {
-    public class CaixaDeBanco
+    public class Program
     {
-        string cliente;
-
-        public CaixaDeBanco(string nome){
-            cliente = nome;
-        }
         static void Main()
         {
+            var contas = new List<int> { 1234, 5678, 91011 };
 
-        CaixaDeBanco cliente = new CaixaDeBanco("Robson");
+            Console.WriteLine("Escolha uma conta: ");
 
-        List<int> contas;
+            foreach (var conta in contas)
+            {
+                Console.WriteLine($"{contas.IndexOf(conta)}: {conta}");
+            }
 
-        contas = new List<int> { 123456, 13477, 56788 };
+            int i = Convert.ToInt32(Console.ReadLine());
+
+            var indexSelecionado = contas.ElementAt(i);
+
+            Console.WriteLine($"Conta: {indexSelecionado}");
+
+            Console.WriteLine("\n ------ Conta ------ \n");
+
+            Conta conta1 = new Conta();
+            Console.WriteLine(@$"Nome: {conta1.Cliente} Saldo: {conta1.MostrarSaldo()}");
+            Console.WriteLine(@$"{conta1.Sacar()}");
+            Console.WriteLine(@$"{conta1.Depositar()}");
+
         }
     }
 }
