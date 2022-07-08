@@ -39,12 +39,19 @@ namespace Banco
 
             Console.WriteLine($"Conta: {indexSelecionado}");
 
-            Console.WriteLine("\n ------ Conta ------ \n");
-
             Conta conta1 = new Conta();
-            Console.WriteLine(@$"Nome: {conta1.Cliente} Saldo: {conta1.MostrarSaldo()}");
-            Console.WriteLine(@$"{conta1.Sacar()}");
-            Console.WriteLine(@$"{conta1.Depositar()}");
+
+            Console.WriteLine($"Olá, {conta1.Cliente}");
+
+            Console.WriteLine(@$"Saldo: {conta1.MostrarSaldo()}");
+
+            Console.WriteLine("Digite valor para saque: ");
+
+            conta1.Sacar();
+
+            Console.WriteLine("Digite o valor depósito: ");
+
+            conta1.Depositar();
 
         }
     }
