@@ -3,7 +3,7 @@ namespace ProjectBattleRobots
 {
     public class RobotBattleHeavy : Robot
     {
-        public RobotBattleHeavy(string nome, int pontos) : base(nome, pontos) { }
+        public RobotBattleHeavy(string nome) : base(nome) { }
         public override int CausarDano()
         {
             int roboBatalhaPesadoCausaDano = 20;
