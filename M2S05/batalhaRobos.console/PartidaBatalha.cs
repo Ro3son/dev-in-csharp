@@ -4,7 +4,15 @@ namespace ProjectBattleRobots
     {
         public static void Batalhar(Robot robot1, Robot robot2)
         {
+            StartBattle(robot1, robot2);
+            RandomAttack(robot1, robot2);
+        }
+
+        public static void StartBattle(Robot robo1, Robot robo2)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine(" ---------- Batalha Entre Robôs ---------- \n");
+            Console.ResetColor();
 
             Console.WriteLine("Iniciar Partida? (s/n)");
 
@@ -12,45 +20,55 @@ namespace ProjectBattleRobots
 
             if (iniciarPartida == "s")
             {
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.Write("\n ======= \n");
                 Console.WriteLine(
-                    $"{robot1.NomeRobo} vs {robot2.NomeRobo} \n"
-                        + $"Pontos de Vida: \n {robot1.PontosVida} ----- {robot2.PontosVida} \n"
+                    $"{robo1.NomeRobo} vs {robo2.NomeRobo} \n"
+                        + $"Pontos de Vida: \n {robo1.PontosVida} ----- {robo2.PontosVida} "
                 );
+                Console.Write("\n ======= \n");
+                Console.ResetColor();
 
-                Console.WriteLine($"{robot1.NomeRobo} ");
-                robot1.Iniciar();
-                Console.WriteLine($"{robot2.NomeRobo} ");
-                robot2.Iniciar();
-                Console.Write("\n");
-                
-                Atacar(robot1, robot2);
-                
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.Write("\n ======= \n");
+                Console.WriteLine($"{robo1.NomeRobo} ");
+                robo1.Iniciar();
+                Console.WriteLine($"{robo2.NomeRobo} ");
+                robo2.Iniciar();
+                Console.Write("\n ======= \n");
+                Console.ResetColor();
             }
         }
-        public static void Atacar(Robot robo1, Robot robo2)
+
+        public static void RandomAttack(Robot robo1, Robot robo2)
         {
             Random rnd = new Random();
 
             string[] atacante = { "Bender", "R2D2", "R2D2", "Bender" };
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 15; i++)
             {
                 int mIndex = rnd.Next(atacante.Length);
 
-                Console.WriteLine("Atacante 1: {0}", atacante[mIndex]);
+                Console.WriteLine($"\n ---- Atacante 1: {atacante[mIndex]} ---- \n");
 
                 if (atacante[mIndex] == "Bender")
                 {
-                    Console.WriteLine("Atacante 2: R2D2");
-                    Console.WriteLine("Dano causado: ");
-                    robo1.ReduzirPontosVida(robo2.CausarDano());
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine($"Robô atacado: {robo2.NomeRobo}, Dano causado: ");
+                    Console.WriteLine(
+                        $"Pontos Vida (R2D2): {robo2.ReduzirPontosVida(robo1.CausarDano())}"
+                    );
+                    Console.ResetColor();
                 }
                 else if (atacante[mIndex] == "R2D2")
                 {
-                    Console.WriteLine("Atacante 2: Bender");
-                    Console.WriteLine("Dano causado: ");
-                    robo2.ReduzirPontosVida(robo1.CausarDano());
-                    Console.WriteLine($"{atacante[mIndex]} está aguardando...");
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.WriteLine($"Robô atacado: {robo1.NomeRobo}, Dano causado: ");
+                    Console.WriteLine(
+                        $"Pontos Vida (Bender): {robo1.ReduzirPontosVida(robo2.CausarDano())}"
+                    );
+                    Console.ResetColor();
                 }
             }
         }
