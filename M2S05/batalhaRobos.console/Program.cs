@@ -5,9 +5,9 @@ namespace ProjectBattleRobots
     {
         static void Main()
         {
-            RobotBattleHeavy robot1 = new RobotBattleHeavy("Bender", 100);
+            RobotBattleHeavy robot1 = new RobotBattleHeavy("Bender");
             
-            RobotBattleLight robot2 = new RobotBattleLight("R2D2", 100);
+            RobotBattleLight robot2 = new RobotBattleLight("R2D2");
 
             PartidaBatalha.Batalhar(robot1, robot2);
          
