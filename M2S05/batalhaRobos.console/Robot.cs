@@ -7,10 +7,10 @@ namespace ProjectBattleRobots
         public int PontosVida { get;  protected set; }
         EStatus Status { get; set; }
 
-        public Robot(string nome, int pontos)
+        public Robot(string nome)
         {
             NomeRobo = nome;
-            PontosVida = pontos;
+            PontosVida = 100;
         }
 
         public void Iniciar()
@@ -31,7 +31,7 @@ namespace ProjectBattleRobots
             if (PontosVida == 0)
             {
                 EStatus status = EStatus.Destruido;
-                Console.WriteLine($"{status}");
+                Console.WriteLine($"{status}!");
             }
             return PontosVida;
         }
